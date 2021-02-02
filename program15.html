@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start An Elements</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Try it</button>
+<script>
+var friends = ["Deepak", "Akash", "Ujwal", "Prateek"];
+document.getElementById("demo").innerHTML = friends;
+
+function myFunction() {
+  friends.unshift("Rahul","Aman");
+  document.getElementById("demo").innerHTML = friends;
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alphabetCharacter</title>
+</head>
+<body>
+    <h5 id="demo"></h5>
+    <script>
+       var characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    
+        document.getElementById("demo").innerHTML=characters;
+        function generateString(length) {
+            var result = ' ';
+            var charactersLength = characters.length;
+            for ( let i = 0; i < length; i++ ) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+      
+        alert(generateString(5));
+    </script>
+    
+</body>
+</html>

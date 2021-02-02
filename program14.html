@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty Array</title>
+</head>
+<body>
+    <p id="clear"></p>
+    <button onclick="Myarr()">Empty An Array</button>
+    <script>
+         var friend=["Prateek","Ujwal","Akash","Deepak"];
+        document.getElementById("clear").innerHTML=friend;
+        
+        function Myarr(){
+        friend.splice(0,friend.length);
+        document.getElementById("clear").innerHTML=friend;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date To Number</title>
+</head>
+<body>
+    <button onclick="datetonumber()">Change</button>
+
+<p id="demo"></p>
+
+<script>
+function datetonumber() {
+  var d = Date.parse("Feb 2, 2021");
+  document.getElementById("demo").innerHTML = d;
+}
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="arr1"></p>
+    <p id="arr2"></p>
+    <p id="result"></p>
+    <button onclick="merge()">AttachMerge</button>
+<script>
+    var x = [1,2,2,3,3,4,4,5,5,6]
+    var y = [4,8,6,9,4,7,6]
+    document.getElementById("arr1").innerHTML=x
+    document.getElementById("arr2").innerHTML=y
+    function merge(x1, x2){
+    var arr = [...x, ...y];
+    var friend = [...new Set(arr)];
+    document.getElementById("result").innerHTML= "After merge:"+friend
+}
+</script>
+</body>
+</html>

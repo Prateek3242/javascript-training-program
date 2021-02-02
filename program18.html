@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+</head>
+<body>
+    <h1>Currency Convertor</h1>
+    <script>
+    let currency=12500
+     currency=prompt('enter a number')
+    currency=parseInt(currency )
+    const result =  currency.toLocaleString('en-IN', {
+    style: 'currency',
+    currency: 'INR'
+});
+alert(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Item</title>
+</head>
+
+<body>
+    
+
+    <p id="demo"></p>
+    <button onclick="removefunction()">Remove</button>
+
+    <script>
+       
+        document.getElementById("demo").innerHTML = name;
+
+        function removefunction() {
+            var array = ["Deepak", "Nitin", "Prateek", "Akash", "Varun"];
+            var index = array.indexOf("Rahul");
+            if(index > -1){
+                array.splice(index,1);
+            }else{
+                alert("Rahul does not exist in the array");
+            }
+            document.getElementById("demo").innerHTML = array;
+        }
+    </script>
+</body>
+
+</html>
